@@ -8,7 +8,7 @@ yarn.lock
 
 # Angular build output
 /dist
-/.angular
+/.angular/*
 .angular/cache
 .nx/cache
 
@@ -41,3 +41,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Specific to me
+front-end/.angular/*
