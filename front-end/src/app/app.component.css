@@ -1,0 +1,16 @@
+.main-nav {
+  padding: 0.5rem 1rem;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e0e0e0;
+}
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+.main-nav a.active {
+  font-weight: 600;
+}
+.content {
+  padding: 1rem;
+}
