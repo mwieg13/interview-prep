@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { AppComponent } from './app.component';
+import { PlayDeckComponent } from './pages/play-deck/play-deck.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [PlayDeckComponent],
   imports: [
     BrowserModule,
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [PlayDeckComponent]
 })
 export class AppModule {}

@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FlashcardService, Flashcard } from './services/flashcard.service';
+import { FlashcardService, Flashcard } from '../../services/flashcard.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './play-deck.component.html',
+  styleUrls: ['./play-deck.component.css']
 })
 
-export class AppComponent implements OnInit {
+export class PlayDeckComponent implements OnInit {
   flashcards: Flashcard[];
   isFlipped = false;
   currentIndex = 0;
