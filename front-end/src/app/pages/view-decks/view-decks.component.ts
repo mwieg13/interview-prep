@@ -46,5 +46,7 @@ export class ViewDecksComponent {
     this.dialog.open(EditDeckDialogComponent, {
       data: deck
     });
+
+
   }
 }

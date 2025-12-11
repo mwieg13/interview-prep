@@ -3,12 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+
 import { PlayDeckComponent } from './pages/play-deck/play-deck.component';
 import { ViewDecksComponent } from './pages/view-decks/view-decks.component';
+import { EditDeckDialogComponent } from './dialogs/edit-deck/edit-deck-dialog.component'
 import { AppComponent } from './app.component';
+
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import { FormsModule } from '@angular/forms'
 
 const routes: Routes = [
   { path: '', redirectTo: 'decks', pathMatch: 'full' },
@@ -21,7 +25,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     PlayDeckComponent,
-    ViewDecksComponent
+    ViewDecksComponent,
+    EditDeckDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,7 @@ const routes: Routes = [
     MatDialogModule,
     MatButtonModule,
     MatListModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

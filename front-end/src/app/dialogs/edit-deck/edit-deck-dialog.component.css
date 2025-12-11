@@ -1,0 +1,70 @@
+.dialog-container {
+  min-width: 400px;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.form-content {
+  padding: 16px 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 24px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cancel-button {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.cancel-button:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.save-button {
+  min-width: 64px;
+}

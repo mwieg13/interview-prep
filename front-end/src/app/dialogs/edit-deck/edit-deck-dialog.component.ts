@@ -3,7 +3,6 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { DeckSummary } from '../../pages/view-decks/view-decks.component';
 
 
-
 @Component({
   selector: 'edit-deck-dialog',
   templateUrl: './edit-deck-dialog.component.html',
@@ -11,17 +10,29 @@ import { DeckSummary } from '../../pages/view-decks/view-decks.component';
 })
 export class EditDeckDialogComponent {
 
+  title: string;
+  name: string;
   description: string;
+  // data: DeckSummary;
 
   constructor(
     private dialogRef: MatDialogRef<EditDeckDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DeckSummary
   ) {
+    // determine if this a new deck by checking the value of the name
+    this.title = data.name.length == 0 ? "New Deck" : "Edit Deck";
+    // this.title = "Test";
+
+    this.name = data.name;
     this.description = data.description;
+    this.data = data;
   }
 
   save() {
-    // this.dialogRef.close(this.form.value);
+    this.data.name = this.name;
+    this.data.description = this.description;
+
+    this.dialogRef.close();
   }
 
   close() {
