@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PlayDeckComponent } from './pages/play-deck/play-deck.component';
 import { ViewDecksComponent } from './pages/view-decks/view-decks.component';
+import { ViewCardsComponent } from './pages/view-cards/view-cards.component';
 import { EditDeckDialogComponent } from './dialogs/edit-deck/edit-deck-dialog.component'
 import { AppComponent } from './app.component';
 
@@ -26,6 +27,7 @@ const routes: Routes = [
     AppComponent,
     PlayDeckComponent,
     ViewDecksComponent,
+    ViewCardsComponent,
     EditDeckDialogComponent
   ],
   imports: [
